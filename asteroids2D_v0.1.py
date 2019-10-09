@@ -3,6 +3,9 @@
 
 import board
 import digitalio
+import adafruit_character_lcd.character_lcd as characterlcd
+from time import sleep
+
 lcd_rs = digitalio.DigitalInOut(board.D7)
 lcd_en = digitalio.DigitalInOut(board.D8)
 lcd_d7 = digitalio.DigitalInOut(board.D12)
@@ -13,8 +16,8 @@ lcd_d4 = digitalio.DigitalInOut(board.D9)
 lcd_columns = 16
 lcd_rows = 2
 
-import adafruit_character_lcd.character_lcd as characterlcd
 lcd = characterlcd.Character_LCD_Mono(lcd_rs, lcd_en, lcd_d4, lcd_d5, lcd_d6, lcd_d7, lcd_columns, lcd_rows)
+lcd.clear()
 
 while True:
     # gratuitous hello world test! ...but tweaked for LCD display testing
@@ -25,3 +28,4 @@ while True:
     for i in range(0:15)
         sleep(1)
         lcd.move_right()
+
