@@ -29,3 +29,6 @@ while True:
         sleep(1)
         lcd.move_right()
 
+# notes: char_lcd library only seems to allow printing via "message",
+# not specifically printing to a given location (x/y, etc)
+# this might require careful manipulation of stored string(s) to keep the state of the playing field
