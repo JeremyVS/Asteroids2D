@@ -1,5 +1,7 @@
 # LCD setup code copied from adafruit guide, 
 # located at: https://learn.adafruit.com/character-lcds/python-circuitpython
+# char lcd library: https://github.com/adafruit/Adafruit_CircuitPython_CharLCD
+# nunchuck library: https://github.com/adafruit/Adafruit_CircuitPython_Nunchuk
 
 import board
 import digitalio
